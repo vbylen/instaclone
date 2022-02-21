@@ -1,94 +1,94 @@
 {
-	"name": "instaclone",
-	"version": "2.0.0",
-	"private": true,
-	"author": "NiketanG",
-	"scripts": {
-		"android": "react-native run-android",
-		"ios": "react-native run-ios",
-		"web:start": "react-app-rewired start",
-		"start": "react-native start",
-		"lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-		"type-check": "tsc --pretty --noEmit",
-		"format": "prettier --write .",
-		"android:release": "cd android && ./gradlew assembleRelease && cd ../ && mv android/app/build/outputs/apk/release/app-release.apk build/app-release.apk && adb install build/app-release.apk ",
-		"prepare": "husky install"
-	},
-	"dependencies": {
-		"@react-native-async-storage/async-storage": "^1.16.1",
-		"@react-native-community/masked-view": "^0.1.11",
-		"@react-native-community/netinfo": "^8.0.0",
-		"@react-native-firebase/app": "^14.5.0",
-		"@react-native-firebase/messaging": "^14.5.0",
-		"@react-navigation/bottom-tabs": "^6.2.0",
-		"@react-navigation/material-top-tabs": "^6.1.1",
-		"@react-navigation/native": "^6.0.8",
-		"@react-navigation/stack": "^6.1.1",
-		"@supabase/supabase-js": "^1.30.4",
-		"base64-arraybuffer": "^1.0.2",
-		"date-fns": "^2.28.0",
-		"nanoid": "^3.3.1",
-		"react": "17.0.2",
-		"react-native": "^0.67.2",
-		"react-native-config": "^1.4.3",
-		"react-native-gesture-handler": "^2.2.0",
-		"react-native-get-random-values": "^1.7.2",
-		"react-native-image-crop-picker": "^0.37.3",
-		"react-native-inappbrowser-reborn": "^3.6.3",
-		"react-native-pager-view": "^5.4.11",
-		"react-native-paper": "^4.11.2",
-		"react-native-reanimated": "^2.4.1",
-		"react-native-safe-area-context": "^3.4.1",
-		"react-native-screens": "^3.12.0",
-		"react-native-svg": "^12.1.1",
-		"react-native-tab-view": "^3.0.1",
-		"react-native-url-polyfill": "^1.3.0",
-		"react-native-vector-icons": "^9.1.0",
-		"react-native-vision-camera": "2.12.0",
-		"react-query": "^3.34.16",
-		"reanimated-bottom-sheet": "^1.0.0-alpha.22",
-		"rn-fetch-blob": "^0.12.0",
-		"use-memo-one": "^1.1.2"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.17.5",
-		"@babel/runtime": "^7.17.2",
-		"@react-native-community/eslint-config": "^3.0.0",
-		"@types/react": "^17.0.39",
-		"@types/react-native": "^0.66.16",
-		"@types/react-native-vector-icons": "^6.4.8",
-		"@typescript-eslint/eslint-plugin": "^5.12.1",
-		"@typescript-eslint/parser": "^5.12.1",
-		"eslint": "^7.32.0",
-		"eslint-config-prettier": "^8.4.0",
-		"eslint-plugin-prettier": "^4.0.0",
-		"husky": "^7.0.1",
-		"lint-staged": "^12.3.4",
-		"metro-react-native-babel-preset": "^0.68.0",
-		"typescript": "^4.5.5"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "yarn run lint-staged",
-			"pre-push": "yarn run type-check"
-		}
-	},
-	"lint-staged": {
-		"*.@(ts|tsx)": [
-			"yarn lint",
-			"yarn format"
-		]
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	}
+  "name": "instaclone",
+  "version": "2.0.0",
+  "private": true,
+  "author": "NiketanG",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web:start": "react-app-rewired start",
+    "start": "react-native start",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write .",
+    "android:release": "cd android && ./gradlew assembleRelease && cd ../ && mv android/app/build/outputs/apk/release/app-release.apk build/app-release.apk && adb install build/app-release.apk ",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.16.1",
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-native-community/netinfo": "^8.0.0",
+    "@react-native-firebase/app": "^14.5.0",
+    "@react-native-firebase/messaging": "^14.5.0",
+    "@react-navigation/bottom-tabs": "^6.2.0",
+    "@react-navigation/material-top-tabs": "^6.1.1",
+    "@react-navigation/native": "^6.0.8",
+    "@react-navigation/stack": "^6.1.1",
+    "@supabase/supabase-js": "^1.30.4",
+    "base64-arraybuffer": "^1.0.2",
+    "date-fns": "^2.28.0",
+    "nanoid": "^3.3.1",
+    "react": "17.0.2",
+    "react-native": "^0.67.2",
+    "react-native-config": "^1.4.3",
+    "react-native-gesture-handler": "^2.2.0",
+    "react-native-get-random-values": "^1.7.2",
+    "react-native-image-crop-picker": "^0.37.3",
+    "react-native-inappbrowser-reborn": "^3.6.3",
+    "react-native-pager-view": "^5.4.11",
+    "react-native-paper": "^4.11.2",
+    "react-native-reanimated": "^2.4.1",
+    "react-native-safe-area-context": "^3.4.1",
+    "react-native-screens": "^3.12.0",
+    "react-native-svg": "^12.1.1",
+    "react-native-tab-view": "^3.0.1",
+    "react-native-url-polyfill": "^1.3.0",
+    "react-native-vector-icons": "^9.1.0",
+    "react-native-vision-camera": "2.12.0",
+    "react-query": "^3.34.16",
+    "reanimated-bottom-sheet": "^1.0.0-alpha.22",
+    "rn-fetch-blob": "^0.12.0",
+    "use-memo-one": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/runtime": "^7.17.2",
+    "@react-native-community/eslint-config": "^3.0.0",
+    "@types/react": "^17.0.39",
+    "@types/react-native": "^0.66.16",
+    "@types/react-native-vector-icons": "^6.4.8",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^12.3.4",
+    "metro-react-native-babel-preset": "^0.68.0",
+    "typescript": "^4.5.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint-staged",
+      "pre-push": "yarn run type-check"
+    }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "yarn lint",
+      "yarn format"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
